@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>staking</title>
+  </head>
+  <body class="bg-bread-800 font-Montserrat">
+    <!-- header and hero -->
+    <header id="header" class="relative">
+      <div class="max-w-1360 w-full mx-auto px-5 md:mb-32 mb-16">
+        <nav class="md:py-9 py-4 md:mb-32 mb-12">
+          <div class="lg:flex hidden items-center justify-between">
+            <div class="flex items-center gap-12">
+              <a href="#">
+                <img src="img/haeder-logo.svg" alt="" />
+              </a>
+              <div class="flex items-center gap-12">
+                <a
+                  href="#"
+                  class="font-medium text-base text-white hover:text-opacity-60"
+                  >Home</a
+                >
+                <div class="flex items-center gap-14">
+                  <div class="flex items-center gap-3">
+                    <a
+                      href="#"
+                      class="font-medium text-base text-white hover:text-opacity-60"
+                      >About</a
+                    >
+                    <span>
+                      <svg
+                        width="16"
+                        height="9"
+                        viewBox="0 0 16 9"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99609 8.75C8.33203 8.75 8.62109 8.61719 8.87891 8.35937L14.7305 2.35937C14.9336 2.15625 15.043 1.90625 15.043 1.60937C15.043 1 14.5586 0.515625 13.957 0.515625C13.6602 0.515625 13.3789 0.632812 13.1602 0.851562L8.00391 6.16406L2.83984 0.851562C2.62109 0.640625 2.34766 0.515625 2.04297 0.515625C1.44141 0.515625 0.957031 1 0.957031 1.60937C0.957031 1.90625 1.06641 2.15625 1.26953 2.36719L7.12109 8.35937C7.39453 8.625 7.66797 8.75 7.99609 8.75Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <a
+                      href="#"
+                      class="font-medium text-base text-white hover:text-opacity-60"
+                      >Token</a
+                    >
+                    <span>
+                      <svg
+                        width="16"
+                        height="9"
+                        viewBox="0 0 16 9"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99609 8.75C8.33203 8.75 8.62109 8.61719 8.87891 8.35937L14.7305 2.35937C14.9336 2.15625 15.043 1.90625 15.043 1.60937C15.043 1 14.5586 0.515625 13.957 0.515625C13.6602 0.515625 13.3789 0.632812 13.1602 0.851562L8.00391 6.16406L2.83984 0.851562C2.62109 0.640625 2.34766 0.515625 2.04297 0.515625C1.44141 0.515625 0.957031 1 0.957031 1.60937C0.957031 1.90625 1.06641 2.15625 1.26953 2.36719L7.12109 8.35937C7.39453 8.625 7.66797 8.75 7.99609 8.75Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <a
+                      href="#"
+                      class="font-medium text-base text-white hover:text-opacity-60"
+                      >Building Blocks</a
+                    >
+                    <span>
+                      <svg
+                        width="16"
+                        height="9"
+                        viewBox="0 0 16 9"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99609 8.75C8.33203 8.75 8.62109 8.61719 8.87891 8.35937L14.7305 2.35937C14.9336 2.15625 15.043 1.90625 15.043 1.60937C15.043 1 14.5586 0.515625 13.957 0.515625C13.6602 0.515625 13.3789 0.632812 13.1602 0.851562L8.00391 6.16406L2.83984 0.851562C2.62109 0.640625 2.34766 0.515625 2.04297 0.515625C1.44141 0.515625 0.957031 1 0.957031 1.60937C0.957031 1.90625 1.06641 2.15625 1.26953 2.36719L7.12109 8.35937C7.39453 8.625 7.66797 8.75 7.99609 8.75Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  class="font-medium text-base text-white hover:text-opacity-60"
+                  >GitBook</a
+                >
+                <a
+                  href="#"
+                  class="font-medium text-base text-white hover:text-opacity-60"
+                  >Metaverse</a
+                >
+              </div>
+            </div>
+            <div class="flex items-center gap-10">
+              <span class="cursor-pointer">
+                <svg
+                  width="16"
+                  height="17"
+                  viewBox="0 0 16 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5.60156 4.35156C5.60156 8.375 8.1875 10.8672 12.3359 10.8672C13.2344 10.8672 14.1641 10.7031 14.7656 10.4531C14.9922 10.3594 15.1328 10.3359 15.2891 10.3359C15.6016 10.3359 15.9062 10.5859 15.9062 10.9766C15.9062 11.0938 15.875 11.2891 15.7734 11.5312C14.4922 14.4688 11.6953 16.2812 8.30469 16.2812C3.55469 16.2812 0.09375 12.8125 0.09375 8.0625C0.09375 4.75781 2.13281 1.70312 5.0625 0.515625C5.30469 0.421875 5.48438 0.390625 5.57812 0.390625C5.97656 0.390625 6.25 0.726562 6.25 1.05469C6.25 1.24219 6.21875 1.39062 6.08594 1.64844C5.79688 2.20312 5.60156 3.21875 5.60156 4.35156ZM4.53125 2.42188C2.71094 3.64062 1.59375 5.79688 1.59375 8.01562C1.59375 11.9297 4.44531 14.7891 8.35156 14.7891C10.6328 14.7891 12.7422 13.7266 13.8828 11.9688C13.3359 12.1641 12.7578 12.2422 12.0859 12.2422C7.16406 12.2422 4.20312 9.35156 4.20312 4.53125C4.20312 3.75781 4.32031 3.05469 4.53125 2.42188Z"
+                    fill="white"
+                  />
+                </svg>
+              </span>
+              <a
+                href="#"
+                class="border border-white rounded-xl font-semibold text-base text-white py-3 px-6"
+                >Registry</a
+              >
+            </div>
+          </div>
+          <!-- mobil -->
+          <div class="lg:hidden flex items-center justify-between">
+            <div class="flex items-center gap-4">
+              <a href="#">
+                <img src="img/haeder-logo.svg" alt="" />
+              </a>
+            </div>
+            <div class="flex flex-row-reverse items-center gap-3">
+              <button class="menubtn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="md:w-7 md:h-7 w-6 h-6 text-white"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+                  />
+                </svg>
+              </button>
+              <a
+                href="#"
+                class="sm:flex hidden border border-white rounded-xl font-semibold md:text-base text-sm text-white md:py-3 md:px-6 py-2 px-3"
+                >Registry</a
+              >
+            </div>
+          </div>
+          <div
+            class="menu fixed z-50 top-0 inset-x-0 translate-x-full transition-all ease-linear p-5 h-full bg-bread-100"
+          >
+            <div class="flex items-center justify-between">
+              <a
+                href="#"
+                class="border border-white rounded-xl font-semibold text-base text-white py-3 px-6"
+                >Registry</a
+              >
+              <button class="xbtn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 text-white"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="flex flex-col gap-5 mt-8">
+              <a
+                href="#"
+                class="font-medium text-base text-white hover:text-opacity-60"
+                >Home</a
+              >
+              <div class="flex items-center gap-3">
+                <a
+                  href="#"
+                  class="font-medium text-base text-white hover:text-opacity-60"
+                  >About</a
+                >
+                <span>
+                  <svg
+                    width="16"
+                    height="9"
+                    viewBox="0 0 16 9"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.99609 8.75C8.33203 8.75 8.62109 8.61719 8.87891 8.35937L14.7305 2.35937C14.9336 2.15625 15.043 1.90625 15.043 1.60937C15.043 1 14.5586 0.515625 13.957 0.515625C13.6602 0.515625 13.3789 0.632812 13.1602 0.851562L8.00391 6.16406L2.83984 0.851562C2.62109 0.640625 2.34766 0.515625 2.04297 0.515625C1.44141 0.515625 0.957031 1 0.957031 1.60937C0.957031 1.90625 1.06641 2.15625 1.26953 2.36719L7.12109 8.35937C7.39453 8.625 7.66797 8.75 7.99609 8.75Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div class="flex items-center gap-3">
+                <a
+                  href="#"
+                  class="font-medium text-base text-white hover:text-opacity-60"
+                  >Token</a
+                >
+                <span>
+                  <svg
+                    width="16"
+                    height="9"
+                    viewBox="0 0 16 9"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.99609 8.75C8.33203 8.75 8.62109 8.61719 8.87891 8.35937L14.7305 2.35937C14.9336 2.15625 15.043 1.90625 15.043 1.60937C15.043 1 14.5586 0.515625 13.957 0.515625C13.6602 0.515625 13.3789 0.632812 13.1602 0.851562L8.00391 6.16406L2.83984 0.851562C2.62109 0.640625 2.34766 0.515625 2.04297 0.515625C1.44141 0.515625 0.957031 1 0.957031 1.60937C0.957031 1.90625 1.06641 2.15625 1.26953 2.36719L7.12109 8.35937C7.39453 8.625 7.66797 8.75 7.99609 8.75Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div class="flex items-center gap-3">
+                <a
+                  href="#"
+                  class="font-medium text-base text-white hover:text-opacity-60"
+                  >Building Blocks</a
+                >
+                <span>
+                  <svg
+                    width="16"
+                    height="9"
+                    viewBox="0 0 16 9"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.99609 8.75C8.33203 8.75 8.62109 8.61719 8.87891 8.35937L14.7305 2.35937C14.9336 2.15625 15.043 1.90625 15.043 1.60937C15.043 1 14.5586 0.515625 13.957 0.515625C13.6602 0.515625 13.3789 0.632812 13.1602 0.851562L8.00391 6.16406L2.83984 0.851562C2.62109 0.640625 2.34766 0.515625 2.04297 0.515625C1.44141 0.515625 0.957031 1 0.957031 1.60937C0.957031 1.90625 1.06641 2.15625 1.26953 2.36719L7.12109 8.35937C7.39453 8.625 7.66797 8.75 7.99609 8.75Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <a
+                href="#"
+                class="font-medium text-base text-white hover:text-opacity-60"
+                >GitBook</a
+              >
+              <a
+                href="#"
+                class="font-medium text-base text-white hover:text-opacity-60"
+                >Metaverse</a
+              >
+            </div>
+          </div>
+        </nav>
+        <div class="text-center text-white flex flex-col items-center">
+          <h2 class="font-medium md:text-5xl text-3xl md:mb-12 mb-6 sm:w-424">
+            Stake Your BLOCKS Tokens
+            <span class="text-stroke">20% APR</span>
+          </h2>
+          <p class="sm:text-base text-sm text-white md:w-620">
+            BLOCKS DAO aims to migrate traditional industries onto blockchain.
+            Through a blend of blockchain and non-blockchain partnerships,
+            BLOCKS intends to grow the utility of its digital asset to become a
+            unit of measure for Blockchain
+          </p>
+        </div>
+      </div>
+      <div class="absolute top-0 -z-50 inset-x-0">
+        <img
+          src="img/about-header-bg.svg"
+          alt=""
+          class="w-full md:h-28xl mix-blend-lighten"
+        />
+      </div>
+    </header>
+    <!-- header and hero -->
+    <!-- main -->
+    <main id="main">
+      <div class="max-w-1360 w-full mx-auto px-5 md:mb-32 mb-16">
+        <div class="grid md:grid-cols-2 gap-8 items-center md:mb-10 mb-5">
+          <div>
+            <h2
+              class="font-medium md:text-5xl text-3xl text-white md:mb-12 mb-6"
+            >
+              What <br class="md:flex hidden" />
+              is <span class="text-stroke">Staking</span>?
+            </h2>
+            <p class="sm:text-base text-sm text-white sm:w-439 mb-8">
+              Staking is the process of holding tokens in a cryptocurrency
+              wallet to support the operations of a network. Participants are
+              rewarded for depositing and holding coins, with constant
+              guaranteed time-based returns. Rewards are calculated based on
+              staking time: the longer you stake, the more you earn
+            </p>
+            <a
+              href="#"
+              class="bg-layer-btn border border-bread-200 rounded-xl font-semibold text-base text-white py-3 px-6 w-40 text-center"
+              >Reopens July 2023</a
+            >
+          </div>
+          <div>
+            <img src="img/staking.svg" alt="" />
+          </div>
+        </div>
+        <div class="">
+          <div class="text-center md:mb-16 mb-8">
+            <h3 class="font-semibold sm:text-base text-sm text-bread-500 mb-4">
+              📎 EARLY WITHDRAW OPTIONS
+            </h3>
+            <h4 class="font-medium md:text-5xl text-3xl text-white">
+              <span class="text-stroke">Start</span> Staking
+            </h4>
+          </div>
+          <div class="grid sm:grid-cols-3 gap-5 sm:mb-16 mb-8">
+            <div class="flex sm:flex-row flex-col justify-between items-center">
+              <div class="flex flex-col sm:items-center w-full justify-between">
+                <p
+                  class="font-semibold sm:text-base text-sm text-bread-400 mb-1"
+                >
+                  BLOCKS/ETH
+                </p>
+                <h4 class="font-semibold sm:text-3xl text-2xl text-white mb-1">
+                  Long Term
+                </h4>
+              </div>
+              <span
+                class="border border-bread-200 sm:h-12 sm:w-0 w-full"
+              ></span>
+            </div>
+            <div class="flex sm:flex-row flex-col justify-between items-center">
+              <div class="flex flex-col sm:items-center w-full justify-between">
+                <p
+                  class="font-semibold sm:text-base text-sm text-bread-400 mb-1"
+                >
+                  BLOCKS
+                </p>
+                <h4 class="font-semibold sm:text-3xl text-2xl text-white mb-1">
+                  UNLIMITED
+                </h4>
+              </div>
+              <span
+                class="border border-bread-200 sm:h-12 sm:w-0 w-full"
+              ></span>
+            </div>
+            <div class="flex flex-col sm:items-center w-full justify-between">
+              <p class="font-semibold sm:text-base text-sm text-bread-400 mb-1">
+                LOCK: 12 Month Lock
+              </p>
+              <h4 class="font-semibold sm:text-3xl text-2xl text-white mb-1">
+                APR 20%
+              </h4>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <a
+              href="#"
+              class="bg-layer-btn border border-bread-200 rounded-xl font-semibold text-base text-white py-3 px-6 md:w-52 w-full text-center"
+              >Reopens July 2023</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- main -->
+    <!-- Get Updates on -->
+    <section id="Get Updates">
+      <div class="max-w-1360 w-full mx-auto px-5 md:mb-32 mb-16">
+        <div class="bg-bread-300 rounded-3xl pt-2">
+          <div class="flex md:flex-row flex-col">
+            <div
+              class="md:py-20 py-5 md:pl-20 md:px-0 px-3 z-50 md:text-left text-center"
+            >
+              <h2
+                class="font-medium md:text-5xl sm:text-3xl text-2xl text-white md:w-337 md:mb-12 mb-5"
+              >
+                Get Updates on
+                <span
+                  ><img
+                    src="img/logo.svg"
+                    alt=""
+                    class="md:w-12 w-6 inline-block"
+                /></span>
+                BLOCKS
+              </h2>
+              <p class="md:text-base text-sm text-white md:w-80 md:mb-8 mb-4">
+                Sign up for the BLOCKS email list and receive news straight to
+                your inbox.
+              </p>
+              <div
+                class="bg-bread-700 rounded-xl flex sm:flex-row flex-col items-center justify-between md:w-80 md:pl-4"
+              >
+                <input
+                  type="text"
+                  placeholder="Enter your email"
+                  class="bg-transparent outline-none text-white placeholder:text-bread-400 placeholder:text-sm md:mb-0 mb-3 p-2 w-full"
+                />
+                <a
+                  href="#"
+                  class="bg-layer-btn border border-bread-200 rounded-xl font-semibold text-base text-white sm:py-3 py-2 px-5 sm:w-36 w-full text-center"
+                  >Sign up</a
+                >
+              </div>
+              <div class="relative">
+                <div class="md:hidden flex">
+                  <img
+                    src="img/get-app-2.png"
+                    alt=""
+                    class="w-full rounded-lg sm:h-64 h-36 sm:-mt-28 -mt-16 relative -z-50"
+                  />
+                </div>
+                <div class="md:hidden flex">
+                  <img
+                    src="img/Get-Updates-3.svg"
+                    alt=""
+                    class="sm:w-64 w-28 absolute sm:-bottom-20 sm:left-40 xs:left-40 left-16 -bottom-8"
+                  />
+                  <img
+                    src="img/get-mobil-icon.svg"
+                    alt=""
+                    class="w-full absolute inset-x-0 bottom-0"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="relative md:flex hidden">
+              <img
+                src="img/Get-Updates.svg"
+                alt=""
+                class="rounded-2xl w-full md:h-28xl"
+              />
+              <div class="absolute top-0 right-0">
+                <img src="img/Get-Updates-2.svg" alt="" />
+              </div>
+              <div class="absolute -bottom-36 md:flex hidden">
+                <img src="img/Get-Updates-3.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Get Updates on -->
+    <!-- footer  -->
+    <footer id="footer">
+      <div class="max-w-1360 w-full mx-auto px-5 md:py-72 py-12">
+        <div
+          class="flex md:flex-row flex-col items-center justify-between gap-8"
+        >
+          <a href="#">
+            <img src="img/haeder-logo.svg" alt="" />
+          </a>
+          <div
+            class="md:hidden flex items-center gap-6 sm:justify-center justify-between w-full"
+          >
+            <span>
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="48" height="48" rx="12" fill="white" />
+                <path
+                  d="M20.28 32.1259C21.8155 32.1355 23.3375 31.8401 24.758 31.2569C26.1784 30.6737 27.4689 29.8143 28.5547 28.7286C29.6404 27.6428 30.4998 26.3523 31.083 24.9319C31.6662 23.5115 31.9616 21.9894 31.952 20.4539C31.952 20.2779 31.952 20.1019 31.944 19.9259C32.7476 19.3438 33.4411 18.6232 33.992 17.7979C33.2416 18.1292 32.4463 18.3475 31.632 18.4459C32.4907 17.9316 33.1333 17.1227 33.44 16.1699C32.6341 16.6479 31.7518 16.9834 30.832 17.1619C30.2698 16.5601 29.5394 16.1416 28.7359 15.9608C27.9324 15.7801 27.0932 15.8455 26.3274 16.1485C25.5616 16.4515 24.9048 16.9781 24.4426 17.6597C23.9804 18.3414 23.7342 19.1464 23.736 19.9699C23.7368 20.2846 23.7703 20.5982 23.836 20.9059C22.2057 20.8239 20.6108 20.4002 19.1547 19.6621C17.6987 18.9241 16.414 17.8883 15.384 16.6219C14.8617 17.5264 14.7026 18.5955 14.9387 19.6129C15.1749 20.6303 15.7887 21.52 16.656 22.1019C16.0057 22.0792 15.37 21.9038 14.8 21.5899V21.6459C14.8009 22.5927 15.1285 23.5102 15.7276 24.2433C16.3266 24.9765 17.1604 25.4804 18.088 25.6699C17.4854 25.8335 16.8535 25.8581 16.24 25.7419C16.5013 26.5573 17.0114 27.2705 17.6987 27.7813C18.3859 28.292 19.2159 28.5748 20.072 28.5899C18.6181 29.7331 16.8215 30.3531 14.972 30.3499C14.6472 30.3513 14.3225 30.3326 14 30.2939C15.8758 31.4909 18.0548 32.1265 20.28 32.1259Z"
+                  fill="black"
+                />
+              </svg>
+            </span>
+            <span>
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="48" height="48" rx="12" fill="white" />
+                <path
+                  d="M19.877 33.94C19.0477 33.9229 18.2272 33.766 17.45 33.476C16.7827 33.2249 16.1782 32.8311 15.679 32.322C15.1697 31.8226 14.7758 31.2178 14.525 30.55C14.2351 29.7728 14.0779 28.9523 14.06 28.123C14.012 27.052 14 26.7 14 24C14 21.3 14.012 20.948 14.06 19.877C14.0782 19.0477 14.2354 18.2273 14.525 17.45C14.7761 16.7827 15.1699 16.1782 15.679 15.679C16.1782 15.1699 16.7827 14.7761 17.45 14.525C18.2273 14.2354 19.0477 14.0782 19.877 14.06C20.948 14.012 21.3 14 24 14C26.7 14 27.052 14.012 28.123 14.06C28.9523 14.0779 29.7728 14.2351 30.55 14.525C31.2174 14.7759 31.8219 15.1698 32.321 15.679C32.8301 16.1782 33.2239 16.7827 33.475 17.45C33.765 18.2272 33.9219 19.0477 33.939 19.877C33.988 20.948 34 21.3 34 24C34 26.7 33.988 27.052 33.94 28.123C33.923 28.9523 33.7662 29.7729 33.476 30.55C33.2188 31.2143 32.8258 31.8175 32.3222 32.3212C31.8185 32.8248 31.2153 33.2178 30.551 33.475C29.7739 33.7652 28.9533 33.922 28.124 33.939C27.052 33.988 26.7 34 24 34C21.3 34 20.948 33.988 19.877 33.94ZM19.959 15.86C19.3244 15.866 18.6956 15.981 18.1 16.2C17.6658 16.3605 17.2731 16.6165 16.951 16.949C16.6175 17.2715 16.3608 17.6649 16.2 18.1C15.981 18.6956 15.866 19.3244 15.86 19.959C15.812 21.007 15.8 21.322 15.8 24C15.8 26.678 15.81 26.993 15.859 28.041C15.865 28.6757 15.9804 29.3045 16.2 29.9C16.3606 30.3345 16.6165 30.7274 16.949 31.05C17.2717 31.3829 17.6651 31.6392 18.1 31.8C18.6947 32.0201 19.3229 32.1365 19.957 32.144C21.005 32.193 21.32 32.203 23.998 32.203C26.676 32.203 26.992 32.193 28.039 32.144C28.6745 32.1373 29.3041 32.0209 29.9 31.8C30.332 31.6338 30.7243 31.3789 31.0516 31.0516C31.3789 30.7243 31.6338 30.332 31.8 29.9C32.0204 29.3053 32.1368 28.6772 32.144 28.043C32.193 26.995 32.203 26.68 32.203 24.002C32.203 21.324 32.193 21.009 32.144 19.961C32.1369 19.3255 32.0206 18.696 31.8 18.1C31.6395 17.666 31.384 17.2734 31.052 16.951C30.7291 16.6176 30.3354 16.3609 29.9 16.2C29.3053 15.9796 28.6772 15.8632 28.043 15.856C26.993 15.812 26.678 15.8 24 15.8C21.322 15.8 21.007 15.812 19.959 15.86ZM18.865 24C18.8648 22.9844 19.1658 21.9915 19.7299 21.1469C20.294 20.3023 21.0959 19.644 22.0342 19.2552C22.9725 18.8664 24.005 18.7645 25.0012 18.9625C25.9973 19.1606 26.9124 19.6495 27.6306 20.3677C28.3489 21.0858 28.838 22.0007 29.0363 22.9968C29.2345 23.993 29.1328 25.0255 28.7442 25.9638C28.3556 26.9022 27.6974 27.7042 26.853 28.2685C26.0085 28.8328 25.0156 29.134 24 29.134C22.6389 29.1321 21.334 28.5907 20.3714 27.6283C19.4088 26.6659 18.8671 25.3611 18.865 24ZM20.665 24C20.6652 24.6591 20.8608 25.3033 21.2271 25.8512C21.5933 26.3992 22.1138 26.8262 22.7227 27.0784C23.3317 27.3306 24.0017 27.3965 24.6481 27.268C25.2945 27.1394 25.8883 26.8221 26.3544 26.3561C26.8205 25.8902 27.138 25.2965 27.2668 24.6501C27.3955 24.0037 27.3298 23.3337 27.0778 22.7247C26.8258 22.1157 26.3989 21.595 25.8511 21.2286C25.3032 20.8622 24.6591 20.6664 24 20.666C23.116 20.6668 22.2685 21.0183 21.6434 21.6434C21.0183 22.2685 20.6668 23.116 20.666 24H20.665ZM28.137 18.662C28.137 18.4247 28.2074 18.1927 28.3392 17.9953C28.4711 17.798 28.6585 17.6442 28.8778 17.5533C29.0971 17.4625 29.3383 17.4388 29.5711 17.4851C29.8039 17.5314 30.0177 17.6456 30.1855 17.8135C30.3534 17.9813 30.4676 18.1951 30.5139 18.4279C30.5602 18.6607 30.5365 18.9019 30.4457 19.1212C30.3548 19.3405 30.201 19.5279 30.0037 19.6598C29.8063 19.7916 29.5743 19.862 29.337 19.862C29.0189 19.8617 28.7139 19.7352 28.4891 19.5102C28.2643 19.2852 28.138 18.9801 28.138 18.662H28.137Z"
+                  fill="black"
+                />
+              </svg>
+            </span>
+            <span>
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="48" height="48" rx="12" fill="white" />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M30.9308 17.6436C29.6561 17.0587 28.2892 16.6277 26.8599 16.3809C26.8339 16.3762 26.8079 16.3881 26.7945 16.4119C26.6187 16.7245 26.4239 17.1325 26.2876 17.4531C24.7503 17.2229 23.221 17.2229 21.7153 17.4531C21.5789 17.1253 21.3771 16.7245 21.2005 16.4119C21.1871 16.3889 21.1611 16.3769 21.135 16.3809C19.7066 16.6269 18.3396 17.0579 17.0641 17.6436C17.0531 17.6483 17.0436 17.6563 17.0373 17.6666C14.4445 21.5402 13.7342 25.3186 14.0827 29.0502C14.0842 29.0685 14.0945 29.0859 14.1087 29.097C15.8193 30.3533 17.4764 31.116 19.1027 31.6215C19.1288 31.6294 19.1563 31.6199 19.1729 31.5985C19.5576 31.0731 19.9005 30.5192 20.1946 29.9367C20.2119 29.9025 20.1954 29.8621 20.1599 29.8486C19.6159 29.6422 19.098 29.3907 18.5998 29.105C18.5604 29.082 18.5572 29.0256 18.5935 28.9986C18.6983 28.92 18.8032 28.8383 18.9033 28.7558C18.9214 28.7407 18.9466 28.7375 18.9679 28.747C22.2411 30.2414 25.7846 30.2414 29.0191 28.747C29.0404 28.7367 29.0657 28.7399 29.0846 28.755C29.1847 28.8375 29.2895 28.92 29.3952 28.9986C29.4314 29.0256 29.4291 29.082 29.3897 29.105C28.8914 29.3962 28.3735 29.6422 27.8288 29.8478C27.7933 29.8613 27.7775 29.9025 27.7949 29.9367C28.0952 30.5184 28.4381 31.0723 28.8157 31.5977C28.8315 31.6199 28.8599 31.6294 28.8859 31.6215C30.5201 31.116 32.1772 30.3533 33.8879 29.097C33.9028 29.0859 33.9123 29.0693 33.9139 29.051C34.3309 24.7369 33.2154 20.9894 30.9568 17.6674C30.9513 17.6563 30.9419 17.6483 30.9308 17.6436ZM20.6834 26.7781C19.6979 26.7781 18.8859 25.8734 18.8859 24.7623C18.8859 23.6512 19.6822 22.7465 20.6834 22.7465C21.6924 22.7465 22.4965 23.6592 22.4807 24.7623C22.4807 25.8734 21.6845 26.7781 20.6834 26.7781ZM25.5316 24.7623C25.5316 25.8734 26.3435 26.7781 27.329 26.7781C28.338 26.7781 29.1264 25.8734 29.1264 24.7623C29.1421 23.6592 28.338 22.7465 27.329 22.7465C26.3278 22.7465 25.5316 23.6512 25.5316 24.7623Z"
+                  fill="black"
+                />
+              </svg>
+            </span>
+          </div>
+          <div class="flex sm:flex-row flex-col items-center md:gap-12 gap-4">
+            <a href="#" class="font-medium text-sm text-white hover:opacity-60"
+              >Terms and Conditions</a
+            >
+            <a href="#" class="font-medium text-sm text-white hover:opacity-60"
+              >Privacy Policy</a
+            >
+            <a href="#" class="font-medium text-sm text-white hover:opacity-60"
+              >Disclaimer</a
+            >
+          </div>
+          <div class="md:flex hidden items-center gap-6">
+            <span>
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="48" height="48" rx="12" fill="white" />
+                <path
+                  d="M20.28 32.1259C21.8155 32.1355 23.3375 31.8401 24.758 31.2569C26.1784 30.6737 27.4689 29.8143 28.5547 28.7286C29.6404 27.6428 30.4998 26.3523 31.083 24.9319C31.6662 23.5115 31.9616 21.9894 31.952 20.4539C31.952 20.2779 31.952 20.1019 31.944 19.9259C32.7476 19.3438 33.4411 18.6232 33.992 17.7979C33.2416 18.1292 32.4463 18.3475 31.632 18.4459C32.4907 17.9316 33.1333 17.1227 33.44 16.1699C32.6341 16.6479 31.7518 16.9834 30.832 17.1619C30.2698 16.5601 29.5394 16.1416 28.7359 15.9608C27.9324 15.7801 27.0932 15.8455 26.3274 16.1485C25.5616 16.4515 24.9048 16.9781 24.4426 17.6597C23.9804 18.3414 23.7342 19.1464 23.736 19.9699C23.7368 20.2846 23.7703 20.5982 23.836 20.9059C22.2057 20.8239 20.6108 20.4002 19.1547 19.6621C17.6987 18.9241 16.414 17.8883 15.384 16.6219C14.8617 17.5264 14.7026 18.5955 14.9387 19.6129C15.1749 20.6303 15.7887 21.52 16.656 22.1019C16.0057 22.0792 15.37 21.9038 14.8 21.5899V21.6459C14.8009 22.5927 15.1285 23.5102 15.7276 24.2433C16.3266 24.9765 17.1604 25.4804 18.088 25.6699C17.4854 25.8335 16.8535 25.8581 16.24 25.7419C16.5013 26.5573 17.0114 27.2705 17.6987 27.7813C18.3859 28.292 19.2159 28.5748 20.072 28.5899C18.6181 29.7331 16.8215 30.3531 14.972 30.3499C14.6472 30.3513 14.3225 30.3326 14 30.2939C15.8758 31.4909 18.0548 32.1265 20.28 32.1259Z"
+                  fill="black"
+                />
+              </svg>
+            </span>
+            <span>
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="48" height="48" rx="12" fill="white" />
+                <path
+                  d="M19.877 33.94C19.0477 33.9229 18.2272 33.766 17.45 33.476C16.7827 33.2249 16.1782 32.8311 15.679 32.322C15.1697 31.8226 14.7758 31.2178 14.525 30.55C14.2351 29.7728 14.0779 28.9523 14.06 28.123C14.012 27.052 14 26.7 14 24C14 21.3 14.012 20.948 14.06 19.877C14.0782 19.0477 14.2354 18.2273 14.525 17.45C14.7761 16.7827 15.1699 16.1782 15.679 15.679C16.1782 15.1699 16.7827 14.7761 17.45 14.525C18.2273 14.2354 19.0477 14.0782 19.877 14.06C20.948 14.012 21.3 14 24 14C26.7 14 27.052 14.012 28.123 14.06C28.9523 14.0779 29.7728 14.2351 30.55 14.525C31.2174 14.7759 31.8219 15.1698 32.321 15.679C32.8301 16.1782 33.2239 16.7827 33.475 17.45C33.765 18.2272 33.9219 19.0477 33.939 19.877C33.988 20.948 34 21.3 34 24C34 26.7 33.988 27.052 33.94 28.123C33.923 28.9523 33.7662 29.7729 33.476 30.55C33.2188 31.2143 32.8258 31.8175 32.3222 32.3212C31.8185 32.8248 31.2153 33.2178 30.551 33.475C29.7739 33.7652 28.9533 33.922 28.124 33.939C27.052 33.988 26.7 34 24 34C21.3 34 20.948 33.988 19.877 33.94ZM19.959 15.86C19.3244 15.866 18.6956 15.981 18.1 16.2C17.6658 16.3605 17.2731 16.6165 16.951 16.949C16.6175 17.2715 16.3608 17.6649 16.2 18.1C15.981 18.6956 15.866 19.3244 15.86 19.959C15.812 21.007 15.8 21.322 15.8 24C15.8 26.678 15.81 26.993 15.859 28.041C15.865 28.6757 15.9804 29.3045 16.2 29.9C16.3606 30.3345 16.6165 30.7274 16.949 31.05C17.2717 31.3829 17.6651 31.6392 18.1 31.8C18.6947 32.0201 19.3229 32.1365 19.957 32.144C21.005 32.193 21.32 32.203 23.998 32.203C26.676 32.203 26.992 32.193 28.039 32.144C28.6745 32.1373 29.3041 32.0209 29.9 31.8C30.332 31.6338 30.7243 31.3789 31.0516 31.0516C31.3789 30.7243 31.6338 30.332 31.8 29.9C32.0204 29.3053 32.1368 28.6772 32.144 28.043C32.193 26.995 32.203 26.68 32.203 24.002C32.203 21.324 32.193 21.009 32.144 19.961C32.1369 19.3255 32.0206 18.696 31.8 18.1C31.6395 17.666 31.384 17.2734 31.052 16.951C30.7291 16.6176 30.3354 16.3609 29.9 16.2C29.3053 15.9796 28.6772 15.8632 28.043 15.856C26.993 15.812 26.678 15.8 24 15.8C21.322 15.8 21.007 15.812 19.959 15.86ZM18.865 24C18.8648 22.9844 19.1658 21.9915 19.7299 21.1469C20.294 20.3023 21.0959 19.644 22.0342 19.2552C22.9725 18.8664 24.005 18.7645 25.0012 18.9625C25.9973 19.1606 26.9124 19.6495 27.6306 20.3677C28.3489 21.0858 28.838 22.0007 29.0363 22.9968C29.2345 23.993 29.1328 25.0255 28.7442 25.9638C28.3556 26.9022 27.6974 27.7042 26.853 28.2685C26.0085 28.8328 25.0156 29.134 24 29.134C22.6389 29.1321 21.334 28.5907 20.3714 27.6283C19.4088 26.6659 18.8671 25.3611 18.865 24ZM20.665 24C20.6652 24.6591 20.8608 25.3033 21.2271 25.8512C21.5933 26.3992 22.1138 26.8262 22.7227 27.0784C23.3317 27.3306 24.0017 27.3965 24.6481 27.268C25.2945 27.1394 25.8883 26.8221 26.3544 26.3561C26.8205 25.8902 27.138 25.2965 27.2668 24.6501C27.3955 24.0037 27.3298 23.3337 27.0778 22.7247C26.8258 22.1157 26.3989 21.595 25.8511 21.2286C25.3032 20.8622 24.6591 20.6664 24 20.666C23.116 20.6668 22.2685 21.0183 21.6434 21.6434C21.0183 22.2685 20.6668 23.116 20.666 24H20.665ZM28.137 18.662C28.137 18.4247 28.2074 18.1927 28.3392 17.9953C28.4711 17.798 28.6585 17.6442 28.8778 17.5533C29.0971 17.4625 29.3383 17.4388 29.5711 17.4851C29.8039 17.5314 30.0177 17.6456 30.1855 17.8135C30.3534 17.9813 30.4676 18.1951 30.5139 18.4279C30.5602 18.6607 30.5365 18.9019 30.4457 19.1212C30.3548 19.3405 30.201 19.5279 30.0037 19.6598C29.8063 19.7916 29.5743 19.862 29.337 19.862C29.0189 19.8617 28.7139 19.7352 28.4891 19.5102C28.2643 19.2852 28.138 18.9801 28.138 18.662H28.137Z"
+                  fill="black"
+                />
+              </svg>
+            </span>
+            <span>
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="48" height="48" rx="12" fill="white" />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M30.9308 17.6436C29.6561 17.0587 28.2892 16.6277 26.8599 16.3809C26.8339 16.3762 26.8079 16.3881 26.7945 16.4119C26.6187 16.7245 26.4239 17.1325 26.2876 17.4531C24.7503 17.2229 23.221 17.2229 21.7153 17.4531C21.5789 17.1253 21.3771 16.7245 21.2005 16.4119C21.1871 16.3889 21.1611 16.3769 21.135 16.3809C19.7066 16.6269 18.3396 17.0579 17.0641 17.6436C17.0531 17.6483 17.0436 17.6563 17.0373 17.6666C14.4445 21.5402 13.7342 25.3186 14.0827 29.0502C14.0842 29.0685 14.0945 29.0859 14.1087 29.097C15.8193 30.3533 17.4764 31.116 19.1027 31.6215C19.1288 31.6294 19.1563 31.6199 19.1729 31.5985C19.5576 31.0731 19.9005 30.5192 20.1946 29.9367C20.2119 29.9025 20.1954 29.8621 20.1599 29.8486C19.6159 29.6422 19.098 29.3907 18.5998 29.105C18.5604 29.082 18.5572 29.0256 18.5935 28.9986C18.6983 28.92 18.8032 28.8383 18.9033 28.7558C18.9214 28.7407 18.9466 28.7375 18.9679 28.747C22.2411 30.2414 25.7846 30.2414 29.0191 28.747C29.0404 28.7367 29.0657 28.7399 29.0846 28.755C29.1847 28.8375 29.2895 28.92 29.3952 28.9986C29.4314 29.0256 29.4291 29.082 29.3897 29.105C28.8914 29.3962 28.3735 29.6422 27.8288 29.8478C27.7933 29.8613 27.7775 29.9025 27.7949 29.9367C28.0952 30.5184 28.4381 31.0723 28.8157 31.5977C28.8315 31.6199 28.8599 31.6294 28.8859 31.6215C30.5201 31.116 32.1772 30.3533 33.8879 29.097C33.9028 29.0859 33.9123 29.0693 33.9139 29.051C34.3309 24.7369 33.2154 20.9894 30.9568 17.6674C30.9513 17.6563 30.9419 17.6483 30.9308 17.6436ZM20.6834 26.7781C19.6979 26.7781 18.8859 25.8734 18.8859 24.7623C18.8859 23.6512 19.6822 22.7465 20.6834 22.7465C21.6924 22.7465 22.4965 23.6592 22.4807 24.7623C22.4807 25.8734 21.6845 26.7781 20.6834 26.7781ZM25.5316 24.7623C25.5316 25.8734 26.3435 26.7781 27.329 26.7781C28.338 26.7781 29.1264 25.8734 29.1264 24.7623C29.1421 23.6592 28.338 22.7465 27.329 22.7465C26.3278 22.7465 25.5316 23.6512 25.5316 24.7623Z"
+                  fill="black"
+                />
+              </svg>
+            </span>
+          </div>
+          <div>
+            <p
+              class="font-medium text-sm text-bread-400 mb-1 md:text-right text-center"
+            >
+              made by <span class="text-white">roobinium.io</span>
+            </p>
+            <p
+              class="font-medium text-sm text-white mb-1 md:text-right text-center"
+            >
+              © 2023 BLOCKS, All rights reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer  -->
+    <script src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <title>blocks</title>
+</head>
+
+<body class="bg-bread-100 font-Montserrat">
+    <!-- header and hero -->
+    <header id="header" class="bg-hero-header w-full h-full">
+        <div class="max-w-1360 w-full mx-auto px-5 pb-20">
+            <nav class="md:py-7 py-4 md:mb-36 mb-16">
+                <div class="lg:flex hidden items-center justify-between">
+                    <div class="flex items-center gap-12">
+                        <a href="#">
+                            <img src="img/haeder-logo.svg" alt="">
+                        </a>
+                        <div class="flex items-center gap-12">
+                            <a href="index.html" class="font-medium text-base text-white hover:text-opacity-60">Home</a>
+                            <div class="flex items-center gap-14">
+                                <div class="flex items-center gap-3">
+                                    <a href="about.html" class="font-medium text-base text-white hover:text-opacity-60">About</a>
+                                    <span>
+                                        <svg width="16" height="9" viewBox="0 0 16 9" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.99609 8.75C8.33203 8.75 8.62109 8.61719 8.87891 8.35937L14.7305 2.35937C14.9336 2.15625 15.043 1.90625 15.043 1.60937C15.043 1 14.5586 0.515625 13.957 0.515625C13.6602 0.515625 13.3789 0.632812 13.1602 0.851562L8.00391 6.16406L2.83984 0.851562C2.62109 0.640625 2.34766 0.515625 2.04297 0.515625C1.44141 0.515625 0.957031 1 0.957031 1.60937C0.957031 1.90625 1.06641 2.15625 1.26953 2.36719L7.12109 8.35937C7.39453 8.625 7.66797 8.75 7.99609 8.75Z"
+                                                fill="white" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <a href="token.html" class="font-medium text-base text-white hover:text-opacity-60">Token</a>
+                                    <span>
+                                        <svg width="16" height="9" viewBox="0 0 16 9" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.99609 8.75C8.33203 8.75 8.62109 8.61719 8.87891 8.35937L14.7305 2.35937C14.9336 2.15625 15.043 1.90625 15.043 1.60937C15.043 1 14.5586 0.515625 13.957 0.515625C13.6602 0.515625 13.3789 0.632812 13.1602 0.851562L8.00391 6.16406L2.83984 0.851562C2.62109 0.640625 2.34766 0.515625 2.04297 0.515625C1.44141 0.515625 0.957031 1 0.957031 1.60937C0.957031 1.90625 1.06641 2.15625 1.26953 2.36719L7.12109 8.35937C7.39453 8.625 7.66797 8.75 7.99609 8.75Z"
+                                                fill="white" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <a href="indication.html" class="font-medium text-base text-white hover:text-opacity-60">Building
+                                        Blocks</a>
+                                    <span>
+                                        <svg width="16" height="9" viewBox="0 0 16 9" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.99609 8.75C8.33203 8.75 8.62109 8.61719 8.87891 8.35937L14.7305 2.35937C14.9336 2.15625 15.043 1.90625 15.043 1.60937C15.043 1 14.5586 0.515625 13.957 0.515625C13.6602 0.515625 13.3789 0.632812 13.1602 0.851562L8.00391 6.16406L2.83984 0.851562C2.62109 0.640625 2.34766 0.515625 2.04297 0.515625C1.44141 0.515625 0.957031 1 0.957031 1.60937C0.957031 1.90625 1.06641 2.15625 1.26953 2.36719L7.12109 8.35937C7.39453 8.625 7.66797 8.75 7.99609 8.75Z"
+                                                fill="white" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <a href="staking.html" class="font-medium text-base text-white hover:text-opacity-60">GitBook</a>
+                            <a href="dao.html" class="font-medium text-base text-white hover:text-opacity-60">Metaverse</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-10">
+                        <span class="cursor-pointer">
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.60156 4.35156C5.60156 8.375 8.1875 10.8672 12.3359 10.8672C13.2344 10.8672 14.1641 10.7031 14.7656 10.4531C14.9922 10.3594 15.1328 10.3359 15.2891 10.3359C15.6016 10.3359 15.9062 10.5859 15.9062 10.9766C15.9062 11.0938 15.875 11.2891 15.7734 11.5312C14.4922 14.4688 11.6953 16.2812 8.30469 16.2812C3.55469 16.2812 0.09375 12.8125 0.09375 8.0625C0.09375 4.75781 2.13281 1.70312 5.0625 0.515625C5.30469 0.421875 5.48438 0.390625 5.57812 0.390625C5.97656 0.390625 6.25 0.726562 6.25 1.05469C6.25 1.24219 6.21875 1.39062 6.08594 1.64844C5.79688 2.20312 5.60156 3.21875 5.60156 4.35156ZM4.53125 2.42188C2.71094 3.64062 1.59375 5.79688 1.59375 8.01562C1.59375 11.9297 4.44531 14.7891 8.35156 14.7891C10.6328 14.7891 12.7422 13.7266 13.8828 11.9688C13.3359 12.1641 12.7578 12.2422 12.0859 12.2422C7.16406 12.2422 4.20312 9.35156 4.20312 4.53125C4.20312 3.75781 4.32031 3.05469 4.53125 2.42188Z"
+                                    fill="white" />
+                            </svg>
+                        </span>
+                        <a href="case.html"
+                            class="border border-white rounded-xl font-semibold text-base text-white py-3 px-6">Registry</a>
+                    </div>
+                </div>
+                <!-- mobil -->
+                <div class="lg:hidden flex items-center justify-between">
+                    <div class="flex items-center gap-4">
+                        <a href="#">
+                            <img src="img/haeder-logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="flex flex-row-reverse items-center gap-3">
+                        <button class="menubtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="md:w-7 md:h-7 w-6 h-6 text-white">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                            </svg>
+                        </button>
+                        <a href="#"
+                            class="sm:flex hidden border border-white rounded-xl font-semibold md:text-base text-sm text-white md:py-3 md:px-6 py-2 px-3">Registry</a>
+                    </div>
+                </div>
+                <div
+                    class="menu fixed z-50 top-0 inset-x-0 translate-x-full transition-all ease-linear p-5 h-full bg-bread-100">
+                    <div class="flex items-center justify-between">
+                        <a href="#"
+                            class="border border-white rounded-xl font-semibold text-base text-white py-3 px-6">Registry</a>
+                        <button class="xbtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6 text-white">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="flex flex-col gap-5 mt-8
+                    ">
+                        <a href="#" class="font-medium text-base text-white hover:text-opacity-60">Home</a>
+                        <div class="flex items-center gap-3">
+                            <a href="#" class="font-medium text-base text-white hover:text-opacity-60">About</a>
+                            <span>
+                                <svg width="16" height="9" viewBox="0 0 16 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.99609 8.75C8.33203 8.75 8.62109 8.61719 8.87891 8.35937L14.7305 2.35937C14.9336 2.15625 15.043 1.90625 15.043 1.60937C15.043 1 14.5586 0.515625 13.957 0.515625C13.6602 0.515625 13.3789 0.632812 13.1602 0.851562L8.00391 6.16406L2.83984 0.851562C2.62109 0.640625 2.34766 0.515625 2.04297 0.515625C1.44141 0.515625 0.957031 1 0.957031 1.60937C0.957031 1.90625 1.06641 2.15625 1.26953 2.36719L7.12109 8.35937C7.39453 8.625 7.66797 8.75 7.99609 8.75Z"
+                                        fill="white" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <a href="#" class="font-medium text-base text-white hover:text-opacity-60">Token</a>
+                            <span>
+                                <svg width="16" height="9" viewBox="0 0 16 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.99609 8.75C8.33203 8.75 8.62109 8.61719 8.87891 8.35937L14.7305 2.35937C14.9336 2.15625 15.043 1.90625 15.043 1.60937C15.043 1 14.5586 0.515625 13.957 0.515625C13.6602 0.515625 13.3789 0.632812 13.1602 0.851562L8.00391 6.16406L2.83984 0.851562C2.62109 0.640625 2.34766 0.515625 2.04297 0.515625C1.44141 0.515625 0.957031 1 0.957031 1.60937C0.957031 1.90625 1.06641 2.15625 1.26953 2.36719L7.12109 8.35937C7.39453 8.625 7.66797 8.75 7.99609 8.75Z"
+                                        fill="white" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <a href="#" class="font-medium text-base text-white hover:text-opacity-60">Building
+                                Blocks</a>
+                            <span>
+                                <svg width="16" height="9" viewBox="0 0 16 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.99609 8.75C8.33203 8.75 8.62109 8.61719 8.87891 8.35937L14.7305 2.35937C14.9336 2.15625 15.043 1.90625 15.043 1.60937C15.043 1 14.5586 0.515625 13.957 0.515625C13.6602 0.515625 13.3789 0.632812 13.1602 0.851562L8.00391 6.16406L2.83984 0.851562C2.62109 0.640625 2.34766 0.515625 2.04297 0.515625C1.44141 0.515625 0.957031 1 0.957031 1.60937C0.957031 1.90625 1.06641 2.15625 1.26953 2.36719L7.12109 8.35937C7.39453 8.625 7.66797 8.75 7.99609 8.75Z"
+                                        fill="white" />
+                                </svg>
+                            </span>
+                        </div>
+                        <a href="#" class="font-medium text-base text-white hover:text-opacity-60">GitBook</a>
+                        <a href="#" class="font-medium text-base text-white hover:text-opacity-60">Metaverse</a>
+                    </div>
+                </div>
+            </nav>
+            <!-- hero -->
+            <div class="grid relative lg:grid-cols-2 lg:gap-0 gap-14 ">
+                <div>
+                    <h2 class="font-medium lg:text-7xl sm:text-5xl text-4xl text-white lg:mb-72 md:mb-10 mb-5">Migrate
+                        Traditional Industries onto the <span class="text-stroke text-white">Blockchain</span></h2>
+                    <p class="md:text-xl text-base text-white md:w-403 lg:mb-12 mb-9">Through a blend of blockchain and
+                        non-blockchain partnerships, BLOCKS will be a core unit of measure for blockchain</p>
+                    <a href="#"
+                        class="bg-layer-btn border border-bread-200 rounded-xl font-semibold text-base text-white py-3 px-6 md:w-40">Registry</a>
+                </div>
+                <div class="">
+                    <img src="img/hero.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="absolute -z-30 top-0 left-0 md:flex hidden">
+            <img src="img/hero-bg.png" alt="" class="mix-blend-lighten	">
+        </div>
+        <div class="absolute sm:-bottom-32xl -bottom-80 inset-x-0 -z-50 md:hidden flex ">
+            <img src="img/hero-app.png" alt="" class="w-full drop-shadow-2xl blur-sm">
+        </div>
+    </header>
+    <!-- header and hero -->
+    <!-- Taking  -->
+    <section id="Taking">
+        <div class="max-w-1360 w-full mx-auto px-5 md:py-32 py-12">
+            <div class="flex md:flex-row flex-col md:items-center md:gap-20 gap-5 mb-16">
+                <h2 class="font-semibold md:text-5xl text-2xl text-white md:w-600">Taking Antiquated
+                    Systems Into <span class="text-stroke">The Future</span></h2>
+                <p class="md:text-base text-sm text-white md:w-403 md:leading-8">BLOCKS is blockchain agnostic and can
+                    integrate existing applications into blockchain technology to help modernize business and industry
+                </p>
+            </div>
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-6">
+                <div
+                    class="bg-bread-300 rounded-3xl flex flex-col items-center justify-center md:pt-4 md:pb-10 py-7 md:px-76 sm:px-12 px-5">
+                    <img src="img/Decentralized.svg" alt="" class="mb-5">
+                    <h3 class="font-semibold md:text-lg text-base text-white mb-2">Decentralized</h3>
+                    <p class="font-medium text-sm text-bread-400 text-center">Strength in decentralization. As one of
+                        the world’s first DAO LLCs, decentralization is at the core of BLOCKS utility. It streamlines
+                        operations and allows for the efficiency that our industry and enterprise partners value most
+                    </p>
+                </div>
+                <div
+                    class="bg-bread-300 rounded-3xl flex flex-col items-center justify-center md:pt-4 md:pb-10 py-7 md:px-85 sm:px-12 px-5">
+                    <img src="img/Autonomous.svg" alt="" class="mb-5">
+                    <h3 class="font-semibold md:text-lg text-base text-white mb-2">Autonomous</h3>
+                    <Improving class="font-medium text-sm text-bread-400 text-center">Improving our world through
+                        blockchain innovation. BLOCKS token utility will continue to scale through leveraging
+                        open-source applications which can be built upon by market participants around the globe</p>
+                </div>
+                <div
+                    class="bg-bread-300 rounded-3xl flex flex-col items-center justify-center md:pt-4 md:pb-10 py-7 md:px-10 sm:px-12 px-5">
+                    <img src="img/Blockchain-Agnostic.svg" alt="" class="mb-5">
+                    <h3 class="font-semibold md:text-lg text-base text-white mb-2">Blockchain Agnostic</h3>
+                    <p class="font-medium text-sm text-bread-400 text-center">Powering blockchain solutions through an
+                        agnostic approach. BLOCKS can power a blockchain solution that is best for you and your
+                        business. Our blockchain agnostic approach to industry solutions fuels empowerment, flexibility
+                        and simplifies the enterprise adoption of blockchain technology</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Taking  -->
+    <!-- Blockchain -->
+    <section id="Blockchain" class="bg-hero-header">
+        <div class="max-w-1360 w-full mx-auto px-5 md:py-28 py-12">
+            <div class="grid md:grid-cols-2 items-center md:gap-151 gap-12">
+                <div class="md:flex hidden">
+                    <img src="img/Blockchain.svg" alt="">
+                </div>
+                <div>
+                    <h2 class="font-semibold md:text-5xl text-3xl text-white md:mb-12 mb-9">The Blockchain <span
+                            class="text-stroke">Migration</span></h2>
+                    <p class="text-base text-white md:w-358 mb-8"><span class="font-semibold">BLOCKS</span> was formed
+                        on the knowledge that the world’s most important economic initiatives over the next decade can
+                        and will be addressed through blockchain <span class="border-b border-white">read more</span>
+                    </p>
+                    <a href="#"
+                        class="bg-layer-btn border border-bread-200 rounded-xl font-semibold text-base text-white py-3 px-6 sm:w-40">Registry</a>
+                </div>
+                <div class="md:hidden flex ">
+                    <img src="img/Blockchain.svg" alt="" class="w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blockchain -->
+    <!-- Novel -->
+    <section id="Novel" class="relative">
+        <div class="max-w-1360 w-full mx-auto px-5 mt-32 ">
+            <div class="grid lg:grid-cols-2 gap-10 sm:mb-32 mb-12">
+                <div>
+                    <h2 class="font-semibold md:text-5xl text-4xl text-white md:mb-12 mb-5">Novel Asset <br><span
+                            class="text-stroke">Connectivity</span></h2>
+                    <p class="text-base text-white md:w-491 md:mb-11 mb-6">BLOCKS connects tokenized assets in novel
+                        ways. The BLOCKS token is a Reactive Smart Contract (RaC). Additional RaCs can optionally
+                        participate within the BLOCKS Network as Operators allowing for improved automation.</p>
+                    <div class="grid md:grid-cols-3 grid-cols-2 md:grid-rows-1 gap-y-6 justify-between">
+                        <div class="flex items-center gap-3">
+                            <span>
+                                <svg width="42" height="40" viewBox="0 0 42 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M34.8129 12.7663L34.9494 30.0156L18.4568 35.0485L18.3342 17.7595L34.8129 12.7663Z"
+                                        fill="#FF00AA" />
+                                    <path
+                                        d="M18.4569 35.0486L7.63876 27.1606L7.51611 9.87158L18.3342 17.7596L18.4569 35.0486Z"
+                                        fill="#D51093" />
+                                    <path
+                                        d="M18.3342 17.7596L7.51612 9.8716L24.0087 4.83861L34.813 12.7665L18.3342 17.7596Z"
+                                        fill="#ED1BA7" />
+                                    <path
+                                        d="M34.813 12.7665L24.0087 4.83861L7.51612 9.8716L7.63877 27.1606L18.4569 35.0486L34.9494 30.0157L34.813 12.7665Z"
+                                        fill="url(#paint0_linear_83_117)" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_83_117" x1="40.013" y1="14.2901" x2="11.5815"
+                                            y2="22.8644" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#7F3FFE" />
+                                            <stop offset="1" stop-color="#7F3FFE" stop-opacity="0" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </span>
+                            <a href="#" class="text-base text-white">Record</a>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span>
+                                <svg width="42" height="40" viewBox="0 0 42 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M34.8129 12.7663L34.9494 30.0156L18.4568 35.0485L18.3342 17.7595L34.8129 12.7663Z"
+                                        fill="#FF00AA" />
+                                    <path
+                                        d="M18.4569 35.0486L7.63876 27.1606L7.51611 9.87158L18.3342 17.7596L18.4569 35.0486Z"
+                                        fill="#D51093" />
+                                    <path
+                                        d="M18.3342 17.7596L7.51612 9.8716L24.0087 4.83861L34.813 12.7665L18.3342 17.7596Z"
+                                        fill="#ED1BA7" />
+                                    <path
+                                        d="M34.813 12.7665L24.0087 4.83861L7.51612 9.8716L7.63877 27.1606L18.4569 35.0486L34.9494 30.0157L34.813 12.7665Z"
+                                        fill="url(#paint0_linear_83_117)" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_83_117" x1="40.013" y1="14.2901" x2="11.5815"
+                                            y2="22.8644" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#7F3FFE" />
+                                            <stop offset="1" stop-color="#7F3FFE" stop-opacity="0" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </span>
+                            <a href="#" class="text-base text-white">Payments</a>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span>
+                                <svg width="42" height="40" viewBox="0 0 42 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M34.8129 12.7663L34.9494 30.0156L18.4568 35.0485L18.3342 17.7595L34.8129 12.7663Z"
+                                        fill="#FF00AA" />
+                                    <path
+                                        d="M18.4569 35.0486L7.63876 27.1606L7.51611 9.87158L18.3342 17.7596L18.4569 35.0486Z"
+                                        fill="#D51093" />
+                                    <path
+                                        d="M18.3342 17.7596L7.51612 9.8716L24.0087 4.83861L34.813 12.7665L18.3342 17.7596Z"
+                                        fill="#ED1BA7" />
+                                    <path
+                                        d="M34.813 12.7665L24.0087 4.83861L7.51612 9.8716L7.63877 27.1606L18.4569 35.0486L34.9494 30.0157L34.813 12.7665Z"
+                                        fill="url(#paint0_linear_83_117)" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_83_117" x1="40.013" y1="14.2901" x2="11.5815"
+                                            y2="22.8644" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#7F3FFE" />
+                                            <stop offset="1" stop-color="#7F3FFE" stop-opacity="0" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </span>
+                            <a href="#" class="text-base text-white">Transfer</a>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span>
+                                <svg width="42" height="40" viewBox="0 0 42 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M34.8129 12.7663L34.9494 30.0156L18.4568 35.0485L18.3342 17.7595L34.8129 12.7663Z"
+                                        fill="#FF00AA" />
+                                    <path
+                                        d="M18.4569 35.0486L7.63876 27.1606L7.51611 9.87158L18.3342 17.7596L18.4569 35.0486Z"
+                                        fill="#D51093" />
+                                    <path
+                                        d="M18.3342 17.7596L7.51612 9.8716L24.0087 4.83861L34.813 12.7665L18.3342 17.7596Z"
+                                        fill="#ED1BA7" />
+                                    <path
+                                        d="M34.813 12.7665L24.0087 4.83861L7.51612 9.8716L7.63877 27.1606L18.4569 35.0486L34.9494 30.0157L34.813 12.7665Z"
+                                        fill="url(#paint0_linear_83_117)" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_83_117" x1="40.013" y1="14.2901" x2="11.5815"
+                                            y2="22.8644" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#7F3FFE" />
+                                            <stop offset="1" stop-color="#7F3FFE" stop-opacity="0" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </span>
+                            <a href="#" class="text-base text-white">Track</a>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span>
+                                <svg width="42" height="40" viewBox="0 0 42 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M34.8129 12.7663L34.9494 30.0156L18.4568 35.0485L18.3342 17.7595L34.8129 12.7663Z"
+                                        fill="#FF00AA" />
+                                    <path
+                                        d="M18.4569 35.0486L7.63876 27.1606L7.51611 9.87158L18.3342 17.7596L18.4569 35.0486Z"
+                                        fill="#D51093" />
+                                    <path
+                                        d="M18.3342 17.7596L7.51612 9.8716L24.0087 4.83861L34.813 12.7665L18.3342 17.7596Z"
+                                        fill="#ED1BA7" />
+                                    <path
+                                        d="M34.813 12.7665L24.0087 4.83861L7.51612 9.8716L7.63877 27.1606L18.4569 35.0486L34.9494 30.0157L34.813 12.7665Z"
+                                        fill="url(#paint0_linear_83_117)" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_83_117" x1="40.013" y1="14.2901" x2="11.5815"
+                                            y2="22.8644" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#7F3FFE" />
+                                            <stop offset="1" stop-color="#7F3FFE" stop-opacity="0" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </span>
+                            <a href="#" class="text-base text-white">Trade</a>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span>
+                                <svg width="42" height="40" viewBox="0 0 42 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M34.8129 12.7663L34.9494 30.0156L18.4568 35.0485L18.3342 17.7595L34.8129 12.7663Z"
+                                        fill="#FF00AA" />
+                                    <path
+                                        d="M18.4569 35.0486L7.63876 27.1606L7.51611 9.87158L18.3342 17.7596L18.4569 35.0486Z"
+                                        fill="#D51093" />
+                                    <path
+                                        d="M18.3342 17.7596L7.51612 9.8716L24.0087 4.83861L34.813 12.7665L18.3342 17.7596Z"
+                                        fill="#ED1BA7" />
+                                    <path
+                                        d="M34.813 12.7665L24.0087 4.83861L7.51612 9.8716L7.63877 27.1606L18.4569 35.0486L34.9494 30.0157L34.813 12.7665Z"
+                                        fill="url(#paint0_linear_83_117)" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_83_117" x1="40.013" y1="14.2901" x2="11.5815"
+                                            y2="22.8644" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#7F3FFE" />
+                                            <stop offset="1" stop-color="#7F3FFE" stop-opacity="0" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </span>
+                            <a href="#" class="text-base text-white">Registries</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="relative mb-6">
+                        <div
+                            class="bg-bread-300 rounded-3xl md:w-536 xs:w-96 w-296 md:py-9 py-6 flex items-center justify-center gap-5 cursor-pointer relative">
+                            <span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M11.6941 3.91387C11.6941 6.12534 10.0501 7.91954 8.00553 7.91954C5.95262 7.91954 4.31697 6.13368 4.30862 3.92222C4.30028 1.76083 5.96931 0 8.00553 0C10.0417 0 11.6941 1.74414 11.6941 3.91387ZM5.98443 3.92232C5.98443 5.27424 6.91074 6.30904 8.0123 6.30904C9.11386 6.30904 10.0318 5.25755 10.0318 3.91398C10.0318 2.61214 9.11386 1.61072 8.0123 1.61072C6.91074 1.61072 5.97609 2.62883 5.98443 3.92232ZM13.18 15.7056C14.6571 15.7056 15.3831 15.2216 15.3831 14.1868C15.3831 11.8084 12.4373 8.83752 8.00602 8.83752C3.57474 8.83752 0.628906 11.8084 0.628906 14.1868C0.628906 15.2216 1.35493 15.7056 2.84037 15.7056H13.18ZM2.42188 13.8948C2.42188 14.0367 2.48864 14.0951 2.67223 14.0951H13.3206C13.5042 14.0951 13.571 14.0367 13.571 13.8948C13.571 12.6931 11.5515 10.4482 7.99643 10.4482C4.4414 10.4482 2.42188 12.6931 2.42188 13.8948Z"
+                                        fill="#FF00AA" />
+                                </svg>
+                            </span>
+                            <h4 class="font-semibold md:text-base text-sm text-white">BLOCKS Sender</h4>
+                        </div>
+                        <span class="border border-bread-500 absolute left-36 h-6"></span>
+                    </div>
+                    <div class="relative mb-6">
+                        <div class="bg-bread-300 rounded-3xl md:w-536 xs:w-96 w-296 md:py-7 py-5 cursor-pointer">
+                            <div class="flex items-center justify-center gap-5">
+                                <span>
+                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.375 13.7188C13.5703 14.5234 12.4688 14.7109 10.9609 14.7109H5.03906C3.53125 14.7109 2.4375 14.5234 1.625 13.7188C0.8125 12.9141 0.640625 11.8203 0.640625 10.3047V4.41406C0.640625 2.92188 0.820312 1.82813 1.625 1.02344C2.42969 0.21875 3.53906 0.03125 5.02344 0.03125H10.9609C12.4688 0.03125 13.5625 0.21875 14.375 1.02344C15.1797 1.82813 15.3594 2.91406 15.3594 4.42969V10.3047C15.3594 11.8203 15.1797 12.9063 14.375 13.7188ZM4.83203 12.9219H11.1758C11.9961 12.9219 12.668 12.8047 13.0742 12.4063C13.4648 12.0079 13.5742 11.3438 13.5742 10.5235V4.21881C13.5742 3.39069 13.4648 2.73444 13.0742 2.336C12.668 1.93756 11.9961 1.82037 11.1758 1.82037H4.83984C4.01172 1.82037 3.33203 1.92975 2.93359 2.32819C2.54297 2.73444 2.43359 3.3985 2.43359 4.22662V10.5235C2.43359 11.3438 2.54297 12.0079 2.93359 12.4063C3.33984 12.8047 4.01172 12.9219 4.83203 12.9219Z"
+                                            fill="#FF00AA" />
+                                    </svg>
+                                </span>
+                                <h4 class="font-semibold md:text-base text-sm text-white">BLOCKS</h4>
+                            </div>
+                            <p class="font-medium text-sm text-bread-400 flex justify-center">(ERC - 777)</p>
+                        </div>
+                        <span class="border border-bread-500 absolute left-16 h-6"></span>
+                    </div>
+                    <div class="mb-6">
+                        <div class="bg-bread-300 rounded-3xl md:w-80 xs:w-60 w-40 md:py-7 py-5 cursor-pointer">
+                            <div class="flex items-center justify-center gap-5">
+                                <span>
+                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.375 13.7188C13.5703 14.5234 12.4688 14.7109 10.9609 14.7109H5.03906C3.53125 14.7109 2.4375 14.5234 1.625 13.7188C0.8125 12.9141 0.640625 11.8203 0.640625 10.3047V4.41406C0.640625 2.92188 0.820312 1.82813 1.625 1.02344C2.42969 0.21875 3.53906 0.03125 5.02344 0.03125H10.9609C12.4688 0.03125 13.5625 0.21875 14.375 1.02344C15.1797 1.82813 15.3594 2.91406 15.3594 4.42969V10.3047C15.3594 11.8203 15.1797 12.9063 14.375 13.7188ZM4.83203 12.9219H11.1758C11.9961 12.9219 12.668 12.8047 13.0742 12.4063C13.4648 12.0079 13.5742 11.3438 13.5742 10.5235V4.21881C13.5742 3.39069 13.4648 2.73444 13.0742 2.336C12.668 1.93756 11.9961 1.82037 11.1758 1.82037H4.83984C4.01172 1.82037 3.33203 1.92975 2.93359 2.32819C2.54297 2.73444 2.43359 3.3985 2.43359 4.22662V10.5235C2.43359 11.3438 2.54297 12.0079 2.93359 12.4063C3.33984 12.8047 4.01172 12.9219 4.83203 12.9219Z"
+                                            fill="#FF00AA" />
+                                    </svg>
+                                </span>
+                                <h4 class="font-semibold md:text-base text-sm text-white">BLOCKS</h4>
+                            </div>
+                            <p class="font-medium text-sm text-bread-400 flex justify-center">(ERC - 777)</p>
+                        </div>
+                    </div>
+                    <div class="relative mb-6">
+                        <div
+                            class="bg-bread-300 rounded-3xl md:w-536 xs:w-96 w-296 md:py-9 py-5 flex items-center justify-center gap-5 cursor-pointer relative">
+                            <span>
+                                <svg width="15" height="17" viewBox="0 0 15 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M1.95703 15.3359C1.95703 15.8047 1.58203 16.1719 1.12109 16.1719C0.660156 16.1719 0.285156 15.7891 0.285156 15.3359V2.38281C0.285156 1.67188 0.613281 1.27344 1.18359 1.01563C1.84766 0.710938 2.44141 0.554688 3.59766 0.554688C5.01004 0.554688 6.23116 0.919274 7.44011 1.28022C8.62519 1.63405 9.79856 1.98438 11.1289 1.98438C11.8456 1.98438 12.3807 1.88056 12.8006 1.79907C13.0719 1.74644 13.2951 1.70313 13.4883 1.70313C14.082 1.70313 14.5117 2.09375 14.5117 2.67969V10.3359C14.5117 11.0703 14.1992 11.5547 13.6211 11.8203C13.0117 12.1094 12.3789 12.2734 11.1914 12.2734C9.82222 12.2734 8.64282 11.919 7.45844 11.5631C6.264 11.2042 5.0645 10.8438 3.66016 10.8438C2.84829 10.8438 2.27856 11.0186 2.01335 11.1C1.99273 11.1063 1.97394 11.1121 1.95703 11.1172V15.3359ZM7.72314 9.89336C8.85849 10.2344 9.95103 10.5625 11.1445 10.5625C12.0742 10.5625 12.6133 10.3125 12.7695 10.1094V3.49222C12.332 3.60941 11.7539 3.67972 11.0742 3.67972C9.65438 3.67972 8.42688 3.31123 7.22166 2.94943C6.05941 2.60053 4.91787 2.25784 3.64453 2.25784C2.71484 2.25784 2.18359 2.52347 2.01953 2.71878V9.3594C2.41016 9.21878 3.02734 9.14065 3.70703 9.14065C5.2171 9.14065 6.49517 9.52453 7.72314 9.89336Z"
+                                        fill="#FF00AA" />
+                                </svg>
+
+                            </span>
+                            <h4 class="font-semibold md:text-base text-sm text-white">BLOCKS Recipient</h4>
+                        </div>
+                        <span
+                            class="border border-bread-500 absolute md:left-96 xs:left-18xl left-56 md:h-148 h-32 md:-top-148 -top-32"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6 items-center">
+                <div class="md:hidden flex mb-8">
+                    <div>
+                        <h2 class="font-medium text-4xl text-white mb-6">Case <span class="text-stroke">Studies</span>
+                        </h2>
+                        <p class="text-base text-white mb-8">BLOCKS is an openly available and decentralized blockchain
+                            technology that anyone in the BLOCKS DAO or our BLOCKS Builder partners can leverage and
+                            build upon to bring immense value. BLOCKS use cases are extremely versatile spanning
+                            personal and commercial industry.</p>
+                        <a href="#"
+                            class="bg-layer-btn border border-bread-200 rounded-xl font-semibold text-base text-white py-3 px-7 w-40">Learn
+                            more</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-bread-300 rounded-3xl md:w-424 w-full md:h-424 p-3 md:ml-44">
+                        <img src="img/Case-Studies.png" alt="" class="w-full">
+                    </div>
+                    <div
+                        class="bg-bread-300 rounded-3xl sm:py-8 sm:px-9 p-4 sm:w-96 md:absolute md:-bottom-24 md:left-1 mt-3">
+                        <div
+                            class="border border-bread-500 gap-2 rounded-full text-base flex items-center w-211 py-2 px-2 mb-4">
+                            <span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="11.9999" cy="12.0002" r="12" fill="url(#paint0_linear_611_653)" />
+                                    <path
+                                        d="M10.4328 16.8967C10.7991 16.8967 11.0859 16.7503 11.2874 16.4512L17.0004 7.63749C17.1469 7.41776 17.2079 7.21633 17.2079 7.02712C17.2079 6.52662 16.8417 6.1665 16.329 6.1665C15.975 6.1665 15.7613 6.28858 15.5477 6.63038L10.4084 14.7605L7.78385 11.4523C7.57633 11.202 7.3627 11.0861 7.05752 11.0861C6.53871 11.0861 6.16638 11.4523 6.16638 11.9589C6.16638 12.1786 6.23963 12.3861 6.42884 12.6059L9.58443 16.4817C9.82248 16.7686 10.0849 16.8967 10.4328 16.8967Z"
+                                        fill="white" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_611_653" x1="-12.0001" y1="12.0002"
+                                            x2="11.9999" y2="36.0002" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#FF00AA" />
+                                            <stop offset="1" stop-color="#F54562" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </span>
+                            <p class="text-base text-white">Verified by BLOCKS</p>
+                        </div>
+                        <p class="text-base text-white"><span class="font-semibold">Verified by BLOCKS</span> (VbB) can
+                            be used for physical art, trading cards, sports merchandise, memorabilia, fashion, NFT
+                            collections and more.</p>
+                    </div>
+                </div>
+                <div class="md:flex hidden">
+                    <div>
+                        <h2 class="font-medium text-5xl text-white md:mb-12 ">Case <span
+                                class="text-stroke">Studies</span> </h2>
+                        <p class="text-base text-white mb-8 w-403">BLOCKS is an openly available and decentralized
+                            blockchain technology that anyone in the BLOCKS DAO or our BLOCKS Builder partners can
+                            leverage and build upon to bring immense value. BLOCKS use cases are extremely versatile
+                            spanning personal and commercial industry.</p>
+                        <a href="#"
+                            class="bg-layer-btn border border-bread-200 rounded-xl font-semibold text-base text-white py-3 px-7 w-40">Learn
+                            more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute xs:bottom-96 bottom-32xl right-0 -z-50">
+            <img src="img/Novel-Asset.svg" alt="" class="mix-blend-lighten blur-md">
+        </div>
+    </section>
+    <!-- Novel -->
+    <!-- blocks -->
+    <section id="blocks">
+        <div class="max-w-1360 w-full mx-auto px-5 md:mt-80 mt-12 md:mb-32 mb-12">
+            <div class="flex sm:flex-row flex-col md:items-center justify-between gap-5 sm:mb-12 mb-8">
+                <h2 class="font-semibold md:text-5xl text-2xl text-white">BLOCKS <span class="text-stroke">Blog</span>
+                </h2>
+                <a href="#"
+                    class="bg-layer-btn border border-bread-200 rounded-xl font-semibold text-base text-white py-3 px-7 sm:w-40 sm:flex hidden">View
+                    All</a>
+            </div>
+            <div class="md:grid hidden lg:grid-cols-4 sm:grid-cols-2 gap-6 md:mb-32 mb-12">
+                <div class="bg-bread-300 rounded-3xl ">
+                    <img src="img/Blocks-1.png" alt="" class="w-full p-2">
+                    <div class="md:p-3 p-4">
+                        <p class="font-semibold md:text-lg text-base text-white">Migrate Traditional Industries onto the
+                            Blockchain</p>
+                    </div>
+                </div>
+                <div class="bg-bread-300 rounded-3xl ">
+                    <img src="img/Blocks-2.png" alt="" class="w-full p-2">
+                    <div class="md:p-6 p-4">
+                        <p class="font-semibold md:text-lg text-base text-white">BLOCKS (VbB) can be used for physical
+                            art</p>
+                    </div>
+                </div>
+                <div class="bg-bread-300 rounded-3xl ">
+                    <img src="img/Blocks-3.png" alt="" class="w-full p-2">
+                    <div class="md:p-6 p-4">
+                        <p class="font-semibold md:text-lg text-base text-white">BLOCKS is decentralized technology </p>
+                    </div>
+                </div>
+                <div class="bg-bread-300 rounded-3xl ">
+                    <img src="img/Blocks-4.png" alt="" class="w-full p-2">
+                    <div class="md:p-6 p-4">
+                        <p class="font-semibold md:text-lg text-base text-white">Blocks Novel Asset Connectivity</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Swiper -->
+            <div class="swiper mySwiper md:hidden flex mb-12">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide ">
+                        <div class="bg-bread-300 rounded-3xl xs:h-80 h-296">
+                            <img src="img/Blocks-1.png" alt="" class="w-full p-2">
+                            <div class="md:p-3 p-4">
+                                <p class="font-semibold md:text-lg text-base text-white">Migrate Traditional Industries
+                                    onto the Blockchain</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="bg-bread-300 rounded-3xl xs:h-80 h-296">
+                            <img src="img/Blocks-2.png" alt="" class="w-full p-2">
+                            <div class="md:p-3 p-4">
+                                <p class="font-semibold md:text-lg text-base text-white">BLOCKS (VbB) can be used for
+                                    physical art</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="bg-bread-300 rounded-3xl xs:h-80 h-296">
+                            <img src="img/Blocks-3.png" alt="" class="w-full p-2">
+                            <div class="md:p-3 p-4">
+                                <p class="font-semibold md:text-lg text-base text-white">BLOCKS is decentralized
+                                    technology </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="bg-bread-300 rounded-3xl xs:h-80 h-296">
+                            <img src="img/Blocks-4.png" alt="" class="w-full p-2">
+                            <div class="md:p-3 p-4">
+                                <p class="font-semibold md:text-lg text-base text-white">Blocks Novel Asset Connectivity
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-bread-300 rounded-3xl pt-2 ">
+                <div class="flex md:flex-row flex-col">
+                    <div class="md:py-20 py-5 md:pl-20 md:px-0 px-3 z-50 md:text-left text-center">
+                        <h2 class="font-medium md:text-5xl sm:text-3xl text-2xl text-white md:w-337 md:mb-12 mb-5">Get
+                            Updates on <span><img src="img/logo.svg" alt="" class="md:w-12 w-6 inline-block"></span>
+                            BLOCKS</h2>
+                        <p class="md:text-base text-sm text-white md:w-80 md:mb-8 mb-4">Sign up for the BLOCKS email
+                            list and receive news straight to your inbox.</p>
+                        <div
+                            class="bg-bread-700 rounded-xl flex sm:flex-row flex-col items-center justify-between md:w-80 md:pl-4">
+                            <input type="text" placeholder="Enter your email"
+                                class="bg-transparent outline-none text-white placeholder:text-bread-400 placeholder:text-sm md:mb-0 mb-3 p-2 w-full">
+                            <a href="#"
+                                class="bg-layer-btn border border-bread-200 rounded-xl font-semibold text-base text-white sm:py-3 py-2 px-5 sm:w-36 w-full text-center">Sign
+                                up</a>
+                        </div>
+                        <div class="relative">
+                            <div class=" md:hidden flex ">
+                                <img src="img/get-app-2.png" alt=""
+                                    class="w-full rounded-lg sm:h-64 h-36 sm:-mt-28 -mt-16 relative -z-50">
+                            </div>
+                            <div class="md:hidden flex ">
+                                <img src="img/Get-Updates-3.svg" alt=""
+                                    class="sm:w-64 w-28 absolute sm:-bottom-20 sm:left-40 xs:left-40 left-16 -bottom-8">
+                                <img src="img/get-mobil-icon.svg" alt="" class="w-full absolute inset-x-0 bottom-0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative md:flex hidden">
+                        <img src="img/Get-Updates.svg" alt="" class="rounded-2xl w-full md:h-28xl">
+                        <div class="absolute top-0 right-0">
+                            <img src="img/Get-Updates-2.svg" alt="">
+                        </div>
+                        <div class="absolute -bottom-36  md:flex hidden">
+                            <img src="img/Get-Updates-3.svg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+    </section>
+    <!-- blocks -->
+    <!-- footer  -->
+    <footer id="footer">
+        <div class="max-w-1360 w-full mx-auto px-5 md:py-72 py-12">
+            <div class="flex md:flex-row flex-col items-center justify-between gap-8">
+                <a href="#">
+                    <img src="img/haeder-logo.svg" alt="">
+                </a>
+                <div class="md:hidden flex items-center gap-6 sm:justify-center justify-between w-full">
+                    <span>
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="12" fill="white" />
+                            <path
+                                d="M20.28 32.1259C21.8155 32.1355 23.3375 31.8401 24.758 31.2569C26.1784 30.6737 27.4689 29.8143 28.5547 28.7286C29.6404 27.6428 30.4998 26.3523 31.083 24.9319C31.6662 23.5115 31.9616 21.9894 31.952 20.4539C31.952 20.2779 31.952 20.1019 31.944 19.9259C32.7476 19.3438 33.4411 18.6232 33.992 17.7979C33.2416 18.1292 32.4463 18.3475 31.632 18.4459C32.4907 17.9316 33.1333 17.1227 33.44 16.1699C32.6341 16.6479 31.7518 16.9834 30.832 17.1619C30.2698 16.5601 29.5394 16.1416 28.7359 15.9608C27.9324 15.7801 27.0932 15.8455 26.3274 16.1485C25.5616 16.4515 24.9048 16.9781 24.4426 17.6597C23.9804 18.3414 23.7342 19.1464 23.736 19.9699C23.7368 20.2846 23.7703 20.5982 23.836 20.9059C22.2057 20.8239 20.6108 20.4002 19.1547 19.6621C17.6987 18.9241 16.414 17.8883 15.384 16.6219C14.8617 17.5264 14.7026 18.5955 14.9387 19.6129C15.1749 20.6303 15.7887 21.52 16.656 22.1019C16.0057 22.0792 15.37 21.9038 14.8 21.5899V21.6459C14.8009 22.5927 15.1285 23.5102 15.7276 24.2433C16.3266 24.9765 17.1604 25.4804 18.088 25.6699C17.4854 25.8335 16.8535 25.8581 16.24 25.7419C16.5013 26.5573 17.0114 27.2705 17.6987 27.7813C18.3859 28.292 19.2159 28.5748 20.072 28.5899C18.6181 29.7331 16.8215 30.3531 14.972 30.3499C14.6472 30.3513 14.3225 30.3326 14 30.2939C15.8758 31.4909 18.0548 32.1265 20.28 32.1259Z"
+                                fill="black" />
+                        </svg>
+                    </span>
+                    <span>
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="12" fill="white" />
+                            <path
+                                d="M19.877 33.94C19.0477 33.9229 18.2272 33.766 17.45 33.476C16.7827 33.2249 16.1782 32.8311 15.679 32.322C15.1697 31.8226 14.7758 31.2178 14.525 30.55C14.2351 29.7728 14.0779 28.9523 14.06 28.123C14.012 27.052 14 26.7 14 24C14 21.3 14.012 20.948 14.06 19.877C14.0782 19.0477 14.2354 18.2273 14.525 17.45C14.7761 16.7827 15.1699 16.1782 15.679 15.679C16.1782 15.1699 16.7827 14.7761 17.45 14.525C18.2273 14.2354 19.0477 14.0782 19.877 14.06C20.948 14.012 21.3 14 24 14C26.7 14 27.052 14.012 28.123 14.06C28.9523 14.0779 29.7728 14.2351 30.55 14.525C31.2174 14.7759 31.8219 15.1698 32.321 15.679C32.8301 16.1782 33.2239 16.7827 33.475 17.45C33.765 18.2272 33.9219 19.0477 33.939 19.877C33.988 20.948 34 21.3 34 24C34 26.7 33.988 27.052 33.94 28.123C33.923 28.9523 33.7662 29.7729 33.476 30.55C33.2188 31.2143 32.8258 31.8175 32.3222 32.3212C31.8185 32.8248 31.2153 33.2178 30.551 33.475C29.7739 33.7652 28.9533 33.922 28.124 33.939C27.052 33.988 26.7 34 24 34C21.3 34 20.948 33.988 19.877 33.94ZM19.959 15.86C19.3244 15.866 18.6956 15.981 18.1 16.2C17.6658 16.3605 17.2731 16.6165 16.951 16.949C16.6175 17.2715 16.3608 17.6649 16.2 18.1C15.981 18.6956 15.866 19.3244 15.86 19.959C15.812 21.007 15.8 21.322 15.8 24C15.8 26.678 15.81 26.993 15.859 28.041C15.865 28.6757 15.9804 29.3045 16.2 29.9C16.3606 30.3345 16.6165 30.7274 16.949 31.05C17.2717 31.3829 17.6651 31.6392 18.1 31.8C18.6947 32.0201 19.3229 32.1365 19.957 32.144C21.005 32.193 21.32 32.203 23.998 32.203C26.676 32.203 26.992 32.193 28.039 32.144C28.6745 32.1373 29.3041 32.0209 29.9 31.8C30.332 31.6338 30.7243 31.3789 31.0516 31.0516C31.3789 30.7243 31.6338 30.332 31.8 29.9C32.0204 29.3053 32.1368 28.6772 32.144 28.043C32.193 26.995 32.203 26.68 32.203 24.002C32.203 21.324 32.193 21.009 32.144 19.961C32.1369 19.3255 32.0206 18.696 31.8 18.1C31.6395 17.666 31.384 17.2734 31.052 16.951C30.7291 16.6176 30.3354 16.3609 29.9 16.2C29.3053 15.9796 28.6772 15.8632 28.043 15.856C26.993 15.812 26.678 15.8 24 15.8C21.322 15.8 21.007 15.812 19.959 15.86ZM18.865 24C18.8648 22.9844 19.1658 21.9915 19.7299 21.1469C20.294 20.3023 21.0959 19.644 22.0342 19.2552C22.9725 18.8664 24.005 18.7645 25.0012 18.9625C25.9973 19.1606 26.9124 19.6495 27.6306 20.3677C28.3489 21.0858 28.838 22.0007 29.0363 22.9968C29.2345 23.993 29.1328 25.0255 28.7442 25.9638C28.3556 26.9022 27.6974 27.7042 26.853 28.2685C26.0085 28.8328 25.0156 29.134 24 29.134C22.6389 29.1321 21.334 28.5907 20.3714 27.6283C19.4088 26.6659 18.8671 25.3611 18.865 24ZM20.665 24C20.6652 24.6591 20.8608 25.3033 21.2271 25.8512C21.5933 26.3992 22.1138 26.8262 22.7227 27.0784C23.3317 27.3306 24.0017 27.3965 24.6481 27.268C25.2945 27.1394 25.8883 26.8221 26.3544 26.3561C26.8205 25.8902 27.138 25.2965 27.2668 24.6501C27.3955 24.0037 27.3298 23.3337 27.0778 22.7247C26.8258 22.1157 26.3989 21.595 25.8511 21.2286C25.3032 20.8622 24.6591 20.6664 24 20.666C23.116 20.6668 22.2685 21.0183 21.6434 21.6434C21.0183 22.2685 20.6668 23.116 20.666 24H20.665ZM28.137 18.662C28.137 18.4247 28.2074 18.1927 28.3392 17.9953C28.4711 17.798 28.6585 17.6442 28.8778 17.5533C29.0971 17.4625 29.3383 17.4388 29.5711 17.4851C29.8039 17.5314 30.0177 17.6456 30.1855 17.8135C30.3534 17.9813 30.4676 18.1951 30.5139 18.4279C30.5602 18.6607 30.5365 18.9019 30.4457 19.1212C30.3548 19.3405 30.201 19.5279 30.0037 19.6598C29.8063 19.7916 29.5743 19.862 29.337 19.862C29.0189 19.8617 28.7139 19.7352 28.4891 19.5102C28.2643 19.2852 28.138 18.9801 28.138 18.662H28.137Z"
+                                fill="black" />
+                        </svg>
+                    </span>
+                    <span>
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="12" fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M30.9308 17.6436C29.6561 17.0587 28.2892 16.6277 26.8599 16.3809C26.8339 16.3762 26.8079 16.3881 26.7945 16.4119C26.6187 16.7245 26.4239 17.1325 26.2876 17.4531C24.7503 17.2229 23.221 17.2229 21.7153 17.4531C21.5789 17.1253 21.3771 16.7245 21.2005 16.4119C21.1871 16.3889 21.1611 16.3769 21.135 16.3809C19.7066 16.6269 18.3396 17.0579 17.0641 17.6436C17.0531 17.6483 17.0436 17.6563 17.0373 17.6666C14.4445 21.5402 13.7342 25.3186 14.0827 29.0502C14.0842 29.0685 14.0945 29.0859 14.1087 29.097C15.8193 30.3533 17.4764 31.116 19.1027 31.6215C19.1288 31.6294 19.1563 31.6199 19.1729 31.5985C19.5576 31.0731 19.9005 30.5192 20.1946 29.9367C20.2119 29.9025 20.1954 29.8621 20.1599 29.8486C19.6159 29.6422 19.098 29.3907 18.5998 29.105C18.5604 29.082 18.5572 29.0256 18.5935 28.9986C18.6983 28.92 18.8032 28.8383 18.9033 28.7558C18.9214 28.7407 18.9466 28.7375 18.9679 28.747C22.2411 30.2414 25.7846 30.2414 29.0191 28.747C29.0404 28.7367 29.0657 28.7399 29.0846 28.755C29.1847 28.8375 29.2895 28.92 29.3952 28.9986C29.4314 29.0256 29.4291 29.082 29.3897 29.105C28.8914 29.3962 28.3735 29.6422 27.8288 29.8478C27.7933 29.8613 27.7775 29.9025 27.7949 29.9367C28.0952 30.5184 28.4381 31.0723 28.8157 31.5977C28.8315 31.6199 28.8599 31.6294 28.8859 31.6215C30.5201 31.116 32.1772 30.3533 33.8879 29.097C33.9028 29.0859 33.9123 29.0693 33.9139 29.051C34.3309 24.7369 33.2154 20.9894 30.9568 17.6674C30.9513 17.6563 30.9419 17.6483 30.9308 17.6436ZM20.6834 26.7781C19.6979 26.7781 18.8859 25.8734 18.8859 24.7623C18.8859 23.6512 19.6822 22.7465 20.6834 22.7465C21.6924 22.7465 22.4965 23.6592 22.4807 24.7623C22.4807 25.8734 21.6845 26.7781 20.6834 26.7781ZM25.5316 24.7623C25.5316 25.8734 26.3435 26.7781 27.329 26.7781C28.338 26.7781 29.1264 25.8734 29.1264 24.7623C29.1421 23.6592 28.338 22.7465 27.329 22.7465C26.3278 22.7465 25.5316 23.6512 25.5316 24.7623Z"
+                                fill="black" />
+                        </svg>
+                    </span>
+                </div>
+                <div class="flex sm:flex-row flex-col items-center md:gap-12 gap-4">
+                    <a href="#" class="font-medium text-sm text-white hover:opacity-60">Terms and Conditions</a>
+                    <a href="#" class="font-medium text-sm text-white hover:opacity-60">Privacy Policy</a>
+                    <a href="#" class="font-medium text-sm text-white hover:opacity-60">Disclaimer</a>
+                </div>
+                <div class="md:flex hidden items-center gap-6">
+                    <span>
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="12" fill="white" />
+                            <path
+                                d="M20.28 32.1259C21.8155 32.1355 23.3375 31.8401 24.758 31.2569C26.1784 30.6737 27.4689 29.8143 28.5547 28.7286C29.6404 27.6428 30.4998 26.3523 31.083 24.9319C31.6662 23.5115 31.9616 21.9894 31.952 20.4539C31.952 20.2779 31.952 20.1019 31.944 19.9259C32.7476 19.3438 33.4411 18.6232 33.992 17.7979C33.2416 18.1292 32.4463 18.3475 31.632 18.4459C32.4907 17.9316 33.1333 17.1227 33.44 16.1699C32.6341 16.6479 31.7518 16.9834 30.832 17.1619C30.2698 16.5601 29.5394 16.1416 28.7359 15.9608C27.9324 15.7801 27.0932 15.8455 26.3274 16.1485C25.5616 16.4515 24.9048 16.9781 24.4426 17.6597C23.9804 18.3414 23.7342 19.1464 23.736 19.9699C23.7368 20.2846 23.7703 20.5982 23.836 20.9059C22.2057 20.8239 20.6108 20.4002 19.1547 19.6621C17.6987 18.9241 16.414 17.8883 15.384 16.6219C14.8617 17.5264 14.7026 18.5955 14.9387 19.6129C15.1749 20.6303 15.7887 21.52 16.656 22.1019C16.0057 22.0792 15.37 21.9038 14.8 21.5899V21.6459C14.8009 22.5927 15.1285 23.5102 15.7276 24.2433C16.3266 24.9765 17.1604 25.4804 18.088 25.6699C17.4854 25.8335 16.8535 25.8581 16.24 25.7419C16.5013 26.5573 17.0114 27.2705 17.6987 27.7813C18.3859 28.292 19.2159 28.5748 20.072 28.5899C18.6181 29.7331 16.8215 30.3531 14.972 30.3499C14.6472 30.3513 14.3225 30.3326 14 30.2939C15.8758 31.4909 18.0548 32.1265 20.28 32.1259Z"
+                                fill="black" />
+                        </svg>
+                    </span>
+                    <span>
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="12" fill="white" />
+                            <path
+                                d="M19.877 33.94C19.0477 33.9229 18.2272 33.766 17.45 33.476C16.7827 33.2249 16.1782 32.8311 15.679 32.322C15.1697 31.8226 14.7758 31.2178 14.525 30.55C14.2351 29.7728 14.0779 28.9523 14.06 28.123C14.012 27.052 14 26.7 14 24C14 21.3 14.012 20.948 14.06 19.877C14.0782 19.0477 14.2354 18.2273 14.525 17.45C14.7761 16.7827 15.1699 16.1782 15.679 15.679C16.1782 15.1699 16.7827 14.7761 17.45 14.525C18.2273 14.2354 19.0477 14.0782 19.877 14.06C20.948 14.012 21.3 14 24 14C26.7 14 27.052 14.012 28.123 14.06C28.9523 14.0779 29.7728 14.2351 30.55 14.525C31.2174 14.7759 31.8219 15.1698 32.321 15.679C32.8301 16.1782 33.2239 16.7827 33.475 17.45C33.765 18.2272 33.9219 19.0477 33.939 19.877C33.988 20.948 34 21.3 34 24C34 26.7 33.988 27.052 33.94 28.123C33.923 28.9523 33.7662 29.7729 33.476 30.55C33.2188 31.2143 32.8258 31.8175 32.3222 32.3212C31.8185 32.8248 31.2153 33.2178 30.551 33.475C29.7739 33.7652 28.9533 33.922 28.124 33.939C27.052 33.988 26.7 34 24 34C21.3 34 20.948 33.988 19.877 33.94ZM19.959 15.86C19.3244 15.866 18.6956 15.981 18.1 16.2C17.6658 16.3605 17.2731 16.6165 16.951 16.949C16.6175 17.2715 16.3608 17.6649 16.2 18.1C15.981 18.6956 15.866 19.3244 15.86 19.959C15.812 21.007 15.8 21.322 15.8 24C15.8 26.678 15.81 26.993 15.859 28.041C15.865 28.6757 15.9804 29.3045 16.2 29.9C16.3606 30.3345 16.6165 30.7274 16.949 31.05C17.2717 31.3829 17.6651 31.6392 18.1 31.8C18.6947 32.0201 19.3229 32.1365 19.957 32.144C21.005 32.193 21.32 32.203 23.998 32.203C26.676 32.203 26.992 32.193 28.039 32.144C28.6745 32.1373 29.3041 32.0209 29.9 31.8C30.332 31.6338 30.7243 31.3789 31.0516 31.0516C31.3789 30.7243 31.6338 30.332 31.8 29.9C32.0204 29.3053 32.1368 28.6772 32.144 28.043C32.193 26.995 32.203 26.68 32.203 24.002C32.203 21.324 32.193 21.009 32.144 19.961C32.1369 19.3255 32.0206 18.696 31.8 18.1C31.6395 17.666 31.384 17.2734 31.052 16.951C30.7291 16.6176 30.3354 16.3609 29.9 16.2C29.3053 15.9796 28.6772 15.8632 28.043 15.856C26.993 15.812 26.678 15.8 24 15.8C21.322 15.8 21.007 15.812 19.959 15.86ZM18.865 24C18.8648 22.9844 19.1658 21.9915 19.7299 21.1469C20.294 20.3023 21.0959 19.644 22.0342 19.2552C22.9725 18.8664 24.005 18.7645 25.0012 18.9625C25.9973 19.1606 26.9124 19.6495 27.6306 20.3677C28.3489 21.0858 28.838 22.0007 29.0363 22.9968C29.2345 23.993 29.1328 25.0255 28.7442 25.9638C28.3556 26.9022 27.6974 27.7042 26.853 28.2685C26.0085 28.8328 25.0156 29.134 24 29.134C22.6389 29.1321 21.334 28.5907 20.3714 27.6283C19.4088 26.6659 18.8671 25.3611 18.865 24ZM20.665 24C20.6652 24.6591 20.8608 25.3033 21.2271 25.8512C21.5933 26.3992 22.1138 26.8262 22.7227 27.0784C23.3317 27.3306 24.0017 27.3965 24.6481 27.268C25.2945 27.1394 25.8883 26.8221 26.3544 26.3561C26.8205 25.8902 27.138 25.2965 27.2668 24.6501C27.3955 24.0037 27.3298 23.3337 27.0778 22.7247C26.8258 22.1157 26.3989 21.595 25.8511 21.2286C25.3032 20.8622 24.6591 20.6664 24 20.666C23.116 20.6668 22.2685 21.0183 21.6434 21.6434C21.0183 22.2685 20.6668 23.116 20.666 24H20.665ZM28.137 18.662C28.137 18.4247 28.2074 18.1927 28.3392 17.9953C28.4711 17.798 28.6585 17.6442 28.8778 17.5533C29.0971 17.4625 29.3383 17.4388 29.5711 17.4851C29.8039 17.5314 30.0177 17.6456 30.1855 17.8135C30.3534 17.9813 30.4676 18.1951 30.5139 18.4279C30.5602 18.6607 30.5365 18.9019 30.4457 19.1212C30.3548 19.3405 30.201 19.5279 30.0037 19.6598C29.8063 19.7916 29.5743 19.862 29.337 19.862C29.0189 19.8617 28.7139 19.7352 28.4891 19.5102C28.2643 19.2852 28.138 18.9801 28.138 18.662H28.137Z"
+                                fill="black" />
+                        </svg>
+                    </span>
+                    <span>
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="12" fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M30.9308 17.6436C29.6561 17.0587 28.2892 16.6277 26.8599 16.3809C26.8339 16.3762 26.8079 16.3881 26.7945 16.4119C26.6187 16.7245 26.4239 17.1325 26.2876 17.4531C24.7503 17.2229 23.221 17.2229 21.7153 17.4531C21.5789 17.1253 21.3771 16.7245 21.2005 16.4119C21.1871 16.3889 21.1611 16.3769 21.135 16.3809C19.7066 16.6269 18.3396 17.0579 17.0641 17.6436C17.0531 17.6483 17.0436 17.6563 17.0373 17.6666C14.4445 21.5402 13.7342 25.3186 14.0827 29.0502C14.0842 29.0685 14.0945 29.0859 14.1087 29.097C15.8193 30.3533 17.4764 31.116 19.1027 31.6215C19.1288 31.6294 19.1563 31.6199 19.1729 31.5985C19.5576 31.0731 19.9005 30.5192 20.1946 29.9367C20.2119 29.9025 20.1954 29.8621 20.1599 29.8486C19.6159 29.6422 19.098 29.3907 18.5998 29.105C18.5604 29.082 18.5572 29.0256 18.5935 28.9986C18.6983 28.92 18.8032 28.8383 18.9033 28.7558C18.9214 28.7407 18.9466 28.7375 18.9679 28.747C22.2411 30.2414 25.7846 30.2414 29.0191 28.747C29.0404 28.7367 29.0657 28.7399 29.0846 28.755C29.1847 28.8375 29.2895 28.92 29.3952 28.9986C29.4314 29.0256 29.4291 29.082 29.3897 29.105C28.8914 29.3962 28.3735 29.6422 27.8288 29.8478C27.7933 29.8613 27.7775 29.9025 27.7949 29.9367C28.0952 30.5184 28.4381 31.0723 28.8157 31.5977C28.8315 31.6199 28.8599 31.6294 28.8859 31.6215C30.5201 31.116 32.1772 30.3533 33.8879 29.097C33.9028 29.0859 33.9123 29.0693 33.9139 29.051C34.3309 24.7369 33.2154 20.9894 30.9568 17.6674C30.9513 17.6563 30.9419 17.6483 30.9308 17.6436ZM20.6834 26.7781C19.6979 26.7781 18.8859 25.8734 18.8859 24.7623C18.8859 23.6512 19.6822 22.7465 20.6834 22.7465C21.6924 22.7465 22.4965 23.6592 22.4807 24.7623C22.4807 25.8734 21.6845 26.7781 20.6834 26.7781ZM25.5316 24.7623C25.5316 25.8734 26.3435 26.7781 27.329 26.7781C28.338 26.7781 29.1264 25.8734 29.1264 24.7623C29.1421 23.6592 28.338 22.7465 27.329 22.7465C26.3278 22.7465 25.5316 23.6512 25.5316 24.7623Z"
+                                fill="black" />
+                        </svg>
+                    </span>
+                </div>
+                <div>
+                    <p class="font-medium text-sm text-bread-400 mb-1 md:text-right text-center">made by <span
+                            class="text-white">roobinium.io</span></p>
+                    <p class="font-medium text-sm text-white mb-1 md:text-right text-center">© 2023 BLOCKS, All rights
+                        reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
