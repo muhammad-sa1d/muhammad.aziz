@@ -1402,6 +1402,10 @@ video {
     width: 3rem;
   }
 
+  .md\:w-146 {
+    width: 146px;
+  }
+
   .md\:w-19xl {
     width: 315px;
   }
@@ -1424,10 +1428,6 @@ video {
 
   .md\:w-358 {
     width: 357px;
-  }
-
-  .md\:w-36 {
-    width: 9rem;
   }
 
   .md\:w-399 {
@@ -1482,6 +1482,10 @@ video {
     width: 620px;
   }
 
+  .md\:w-64 {
+    width: 16rem;
+  }
+
   .md\:w-7 {
     width: 1.75rem;
   }
@@ -1500,18 +1504,6 @@ video {
 
   .md\:w-80 {
     width: 20rem;
-  }
-
-  .md\:w-146 {
-    width: 146px;
-  }
-
-  .md\:w-60 {
-    width: 15rem;
-  }
-
-  .md\:w-64 {
-    width: 16rem;
   }
 
   .md\:grid-cols-2 {
